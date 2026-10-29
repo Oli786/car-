@@ -16,7 +16,7 @@ contracts/cache/
 contracts/broadcast/
 cache/
 out/
-lib/
+/lib/
 
 # Environment files, keys and secrets (never commit these)
 .env
