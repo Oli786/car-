@@ -1,0 +1,49 @@
+# Dependencies
+node_modules/
+.pnp.*
+.yarn/
+
+# Build output
+dist/
+build/
+.vite/
+*.tsbuildinfo
+coverage/
+
+# Foundry output and vendored libraries (install with `forge install`)
+contracts/out/
+contracts/cache/
+contracts/broadcast/
+cache/
+out/
+lib/
+
+# Environment files, keys and secrets (never commit these)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.keystore
+keystore/
+secrets/
+.circle/
+recovery_file*
+*recovery*.dat
+id_rsa*
+.npmrc
+
+# Local deployment records (contain machine paths and internal wallet ids)
+contracts/contract-metadata/*.json
+
+# Runtime logs and editor/tool state
+console.jsonl
+traces.jsonl
+*.log
+.agents/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

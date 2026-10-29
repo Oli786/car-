@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+  background: #070815;
+  color: #e8ecff;
+}
+
+body {
+  margin: 0;
+  font-family: 'DM Sans', ui-sans-serif, sans-serif;
+  min-height: 100dvh;
+  overscroll-behavior: none;
+}
+
+.font-display {
+  font-family: 'Space Grotesk', 'DM Sans', sans-serif;
+  letter-spacing: -0.02em;
+}
+
+.touch-none-select {
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+
+.neon-text {
+  text-shadow: 0 0 18px rgba(34, 230, 255, 0.55);
+}
+
+.grid-bg {
+  background-image:
+    radial-gradient(circle at 20% 0%, rgba(255, 46, 147, 0.14), transparent 45%),
+    radial-gradient(circle at 90% 20%, rgba(34, 230, 255, 0.12), transparent 40%),
+    linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+  background-size: auto, auto, 36px 36px, 36px 36px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
